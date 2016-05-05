@@ -2,7 +2,9 @@
 
 import UIKit
 
-for numero in 0...100
+let rango = 0...100
+
+for numero in rango
 {
     var residuo5  = numero % 5
     var residuoP  = numero % 2
@@ -24,5 +26,4 @@ for numero in 0...100
         final = "\(final) Viva Swift!!!"
     }
     print("#\(numero) \(final)")
-    
 }
