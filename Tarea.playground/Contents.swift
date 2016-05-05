@@ -6,20 +6,23 @@ for numero in 0...100
 {
     var residuo5  = numero % 5
     var residuoP  = numero % 2
-    if residuo5 == 0
-    {
-        print("# \(numero) Bingo!!!")
-    }
+    var final = "";
     if residuoP == 0
     {
-        print("# \(numero) Par!!!")
+        final = "Par!!!"
     }
     else
     {
-        print("# \(numero) Impar!!!")
+        final = "Impar!!!"
+    }
+    if residuo5 == 0
+    {
+        final = "\(final) Bingo!!!"
     }
     if numero >= 30 && numero <= 40
     {
-        print("# \(numero) Viva Swift!!!")
+        final = "\(final) Viva Swift!!!"
     }
+    print("#\(numero) \(final)")
+    
 }
